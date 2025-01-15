@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="download.png"
+</head>
+<body>
+    <header>
+        <h1>phishing Awareness Website</h1>
+    </header>
+
+    <section id="home">
+        <h2>What is Phishing?</h2>
+        <p>A phishing attack is a type of cyber attack where an attacker tries to trick individuals into revealing sensitive information, such as passwords or credit card details, by pretending to be a trusted entity, usually through deceptive emails, messages, or websites.</p>
+        <p>Learn how to protect yourself from phishing attacks by recognizing suspicious emails, websites, and messages.</p>
+    </section>
+
+    <section id="examples">
+        <h2>Phishing Email Examples</h2>
+        <div class="example">
+            <h3>Example 1: Suspicious Email</h3>
+            <p>Dear User, <br> Your account has been compromised. Please <a href="https://memepng.netlify.app/">click here</a> to reset your password.</p>
+            <p><strong>Hint:</strong> Check the email address and URL before clicking any link!</p>
+        </div>
+        <div class="example">
+            <h3>Example 2: Fake Bank Email</h3>
+            <p>Dear Customer, <br> We have detected unusual activity in your bank account. Please <a href="https://jocular-cocada-ec45b4.netlify.app/">click here</a> to secure your account.</p>
+            <p><strong>Hint:</strong> Banks never ask for sensitive information via email!</p>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Phishing Quiz</h2>
+      
+        
+        <!-- Original Questions -->
+        <div class="quiz-question">
+            <p><strong>Question 1:</strong> You receive an email from an unknown sender asking you to reset your password. What should you do?</p>
+            <button onclick="checkAnswer('ignore', this)">Ignore the email</button>
+            <button onclick="checkAnswer('click', this)">Click the link</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 2:</strong> An email claims you’ve won a prize and asks for your bank details. What should you do?</p>
+            <button onclick="checkAnswer('send', this)">Send the bank details</button>
+            <button onclick="checkAnswer('report', this)">Report the email</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 3:</strong> You receive a message from a trusted contact asking for your personal information but with a suspicious tone. How should you respond?</p>
+            <button onclick="checkAnswer('verify', this)">Verify with the contact directly</button>
+            <button onclick="checkAnswer('reply', this)">Reply with your personal information</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 4:</strong> A website you visit asks for your login credentials, but the URL looks strange. What should you do?</p>
+            <button onclick="checkAnswer('login', this)">Login anyway</button>
+            <button onclick="checkAnswer('leave', this)">Leave the website</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 5:</strong> You receive an email from your company’s IT department asking you to verify your account details. What should you do?</p>
+            <button onclick="checkAnswer('verifyIt', this)">Verify the email with your IT department directly</button>
+            <button onclick="checkAnswer('sendInfo', this)">Send your account details</button>
+        </div>
+    
+        <!-- New Questions -->
+        <div class="quiz-question">
+            <p><strong>Question 6:</strong> An email from a friend asks you to check out a cool link, but it looks suspicious. What should you do?</p>
+            <button onclick="checkAnswer('clickLink', this)">Click the link</button>
+            <button onclick="checkAnswer('askFriend', this)">Ask your friend if they sent the email</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 7:</strong> You receive an SMS from your bank asking for your password to confirm a transaction. What should you do?</p>
+            <button onclick="checkAnswer('callBank', this)">Call your bank directly</button>
+            <button onclick="checkAnswer('replySMS', this)">Reply with your password</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 8:</strong> A pop-up on a website claims your computer is infected with malware. What should you do?</p>
+            <button onclick="checkAnswer('downloadFix', this)">Download the fix from the pop-up</button>
+            <button onclick="checkAnswer('ignorePopup', this)">Ignore the pop-up</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 9:</strong> A job offer email asks you to send personal information such as your social security number. What should you do?</p>
+            <button onclick="checkAnswer('investigateJob', this)">Investigate the company</button>
+            <button onclick="checkAnswer('sendInfoJob', this)">Send your personal information</button>
+        </div>
+        <div class="quiz-question">
+            <p><strong>Question 10:</strong> You get a friend request on social media from someone you don't know. What should you do?</p>
+            <button onclick="checkAnswer('acceptFriendRequest', this)">Accept the friend request</button>
+            <button onclick="checkAnswer('ignoreFriendRequest', this)">Ignore the friend request</button>
+        </div>
+    
+        <div class="quiz-result" id="quiz-result"></div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
